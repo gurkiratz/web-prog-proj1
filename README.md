@@ -2,6 +2,8 @@
 
 Our website aims to provide a vast collection of manuals and learning materials for various programming languages, including HTML, CSS, JavaScript, Python, and more.
 
+Live website: https://steady-cascaron-49874f.netlify.app/
+
 ## Our Team:
 
 - Gurkirat: Created project layout and design, and overall making the genius ideas that our project manager invented from words come to life via HTML, and CSS.
