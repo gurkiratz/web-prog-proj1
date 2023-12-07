@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <style>
+         *{
+         }
+         .header-links {
+         display: flex;
+         gap: 10px;
+         color:white;
+         }
+         nav {
+         margin-bottom: 20px;
+         color:white;
+         }
+         nav ul {
+         list-style-type: none;
+         padding: 0;
+         color:white;
+         }
+         nav ul li {
+         display: inline-block;
+         margin-right: 10px;
+         color:white;
+         }
+         h2 {
+         margin-top: 40px;
+         background-color: rgb(3, 3, 65);
+         color:white;
+         }
+         pre {
+         background-color: #000000;
+         padding: 10px;
+         border-radius: 4px;
+         color:white;
+         }
+         body{
+         background-color: rgb(25, 10, 102);
+         height: 100%;
+         background-position: center;
+         background-repeat: no-repeat;
+         background-size: cover;
+         color:white;
+         }
+         p{
+         /* color: lightblue; */
+         color:white;
+         }
+         a:link {
+         color: rgb(255, 255, 255);
+         }
+         a:visited {
+         color: rgb(255, 255, 255);
+         }
+         a:hover {
+         color: rgb(255, 0, 0);
+         }
+         a:active {
+         color: rgb(255, 255, 255);
+         }
+         #button1{
+         color: black;
+         }
+         #button2{
+         color: black;
+         }
+      </style>
+      <title>Java-doc</title>
+   </head>
+   <body>
+      <header>
+         <table>
+            <tr class="header-links">
+               <td>
+                  <a href="./index.html">Home</a>
+               </td>
+               <td>
+                  <a href="./html-doc.html">HTML</a>
+               </td>
+               <td>
+                  <a href="./css-doc.html">CSS</a>
+               </td>
+               <td>
+                  <a href="./js-doc.html">JavaScript</a>
+               </td>
+               <td>
+                  <a href="./python-doc.html">Python</a>
+               </td>
+               <td>
+                  <a href="./java-doc.html">Java</a>
+               </td>
+               <td>
+                  <input type="text" placeholder="Search our docs..." size="20" />
+                  <button id="button1">Signup</button>
+                  <button id="button2">Login</button>
+               </td>
+            </tr>
+            <tr class="nav-links"></tr>
+         </table>
+      </header>
+      <nav>
+         <h1>CSS</h1>
+         <ul>
+            <li><a href="#introduction">CSS</a></li>
+            <li><a href="#selectors">CSS Selectors</a></li>
+            <li><a href="#box-model">CSS Box Model</a></li>
+            <li><a href="#layout">CSS Layout</a></li>
+            <li><a href="#flexbox">CSS Flexbox</a></li>
+            <li><a href="#grid">CSS Grid</a></li>
+            <li><a href="#media-queries">CSS Media Queries</a></li>
+         </ul>
+      </nav>
+      <main>
+         <h2 id="introduction">Introduction to CSS</h2>
+         <p>
+            CSS (Cascading Style Sheets) is a styling language used to describe the
+            look and formatting of a document written in HTML. It enables web
+            developers to control the visual appearance of web pages.
+         </p>
+         <pre><code>body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}</code></pre>
+         <h2 id="selectors">CSS Selectors</h2>
+         <p>
+            CSS selectors are used to target specific HTML elements and apply styles
+            to them. They allow you to select elements based on their tag name,
+            class, ID, attributes, and more.
+         </p>
+         <pre><code>h1 {
+    color: #333;
+    font-size: 24px;
+}</code></pre>
+         <h2 id="box-model">CSS Box Model</h2>
+         <p>
+            The CSS box model describes the layout and sizing of elements on a web
+            page. It consists of content, padding, border, and margin. Understanding
+            the box model is crucial for creating responsive and well-structured
+            layouts.
+         </p>
+         <pre><code>.box {
+    width: 200px;
+    height: 150px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    margin: 10px;
+}</code></pre>
+         <h2 id="layout">CSS Layout</h2>
+         <p>
+            CSS layout techniques allow you to control the positioning and
+            arrangement of elements on a web page. You can use properties like
+            display, position, float, and more to create different layouts.
+         </p>
+         <pre><code>.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}</code></pre>
+         <h2 id="flexbox">CSS Flexbox</h2>
+         <p>
+            CSS Flexbox is a one-dimensional layout model that provides a flexible
+            way to distribute space among items within a container. It simplifies
+            the creation of responsive and flexible layouts.
+         </p>
+         <pre><code>.flex-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}</code></pre>
+         <h2 id="grid">CSS Grid</h2>
+         <p>
+            CSS Grid is a two-dimensional layout system that allows you to create
+            complex grid-based layouts. It provides precise control over the
+            placement and sizing of elements in both rows and columns.
+         </p>
+         <pre><code>.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 10px;
+}</code></pre>
+         <h2 id="media-queries">CSS Media Queries</h2>
+         <p>
+            CSS Media Queries allow you to apply different styles based on the
+            characteristics of the device or viewport. They are commonly used for
+            creating responsive designs that adapt to different screen sizes.
+         </p>
+         <pre><code>@media screen and (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+}</code></pre>
+         <p>
+            These CSS documentation examples were adapted from various CSS resources
+            and tutorials.
+         </p>
+      </main>
+      <footer>
+         <a href="./about.html">About Us</a> Copyright &copy; JetBrains, 2023
+      </footer>
+   </body>
+</html>

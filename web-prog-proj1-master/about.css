@@ -1,0 +1,128 @@
+:root {
+  --primary-color: #007acc;
+  --secondary-color: #0099ff;
+  --text-color: #fff;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+header {
+  background-color: var(--primary-color);
+  color: var(--text-color);
+  padding: 20px;
+}
+
+header h1 {
+  font-size: 36px;
+  margin: 0;
+}
+
+.search-bar {
+  margin-top: 10px;
+}
+
+.search-bar input {
+  width: 300px;
+  padding: 10px;
+  border: none;
+}
+
+.search-bar button {
+  background-color: var(--secondary-color);
+  color: var(--text-color);
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+.search-bar button:hover {
+  background-color: var(--primary-color);
+}
+
+/* Styling for main*/
+main {
+  padding: 20px;
+}
+
+main h1,
+main h2 {
+  color: var(--primary-color);
+}
+
+.team-member {
+  text-align: center;
+  margin: 20px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s;
+}
+
+.team-member:hover {
+  transform: translateY(-5px);
+}
+
+.team-member img {
+  max-width: 100%;
+  border-radius: 50%;
+}
+
+.team-member h3 {
+  font-size: 20px;
+  margin-top: 10px;
+  color: #333;
+}
+
+/* Styling for contact form section */
+.contact-form {
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.contact-form label {
+  display: block;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.contact-form input[type='text'],
+.contact-form input[type='email'],
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.contact-form button {
+  background-color: var(--primary-color);
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+/* footer */
+footer {
+  background-color: var(--primary-color);
+  color: var(--text-color);
+  padding: 10px;
+  text-align: center;
+  margin-top: auto;
+}
+
+footer a {
+  color: var(--text-color);
+  margin: 0 10px;
+}

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./dhyey.css">
+  <title>Java-doc</title>
+</head>
+
+<body>
+  <header>
+    <table>
+      <tr class="header-links">
+        <td>
+          <a href="./index.html">Home</a>
+        </td>
+        <td>
+          <a href="./html-doc.html">HTML</a>
+        </td>
+        <td>
+          <a href="./css-doc.html">CSS</a>
+        </td>
+        <td>
+          <a href="./js-doc.html">JavaScript</a>
+        </td>
+        <td>
+          <a href="./python-doc.html">Python</a>
+        </td>
+        <td>
+          <a href="./java-doc.html">Java</a>
+        </td>
+
+        <td>
+          <input type="text" placeholder="Search our docs..." size="20" />
+          <button>Signup</button>
+          <button>Login</button>
+        </td>
+      </tr>
+      <tr class="nav-links"></tr>
+    </table>
+  </header>
+  <nav>
+    <h1>Java</h1>
+    <ul>
+      <li><a href="#introduction">Introduction</a></li>
+      <li><a href="#variables">Java Variables</a></li>
+      <li><a href="#control-flow">Java Control Flow</a></li>
+      <li><a href="#methods">Java Methods</a></li>
+      <li><a href="#classes">Java Classes</a></li>
+      <li><a href="#exceptions">Java Exceptions</a></li>
+    </ul>
+  </nav>
+  <main>
+    <h2 id="introduction">Introduction to Java</h2>
+    <p>
+      Java is a popular object-oriented programming language used for building
+      a wide range of applications. It is known for its platform independence
+      and robustness.
+    </p>
+    <pre><code>public class HelloWorld {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}</code></pre>
+
+    <h2 id="variables">Java Variables</h2>
+    <p>
+      Variables in Java are used to store values of different types. They
+      provide a way to reference and manipulate data within a program.
+    </p>
+    <pre><code>int myNumber = 42;
+String myName = "John Doe";</code></pre>
+
+    <h2 id="control-flow">Java Control Flow</h2>
+    <p>
+      Java provides control flow statements such as if-else, loops, and
+      switch-case to control the execution flow of a program based on
+      conditions and iterations.
+    </p>
+    <pre><code>if (condition) {
+    // code block
+} else {
+    // code block
+}</code></pre>
+
+    <h2 id="methods">Java Methods</h2>
+    <p>
+      Methods in Java are reusable blocks of code that perform specific tasks.
+      They allow code to be organized, modular, and promote code reuse.
+    </p>
+    <pre><code>public int sum(int a, int b) {
+    return a + b;
+}</code></pre>
+
+    <h2 id="classes">Java Classes</h2>
+    <p>
+      Classes in Java are blueprints for creating objects. They define the
+      properties and behaviors that objects of the class can exhibit.
+    </p>
+    <pre><code>public class Person {
+    private String name;
+    private int age;
+
+    public Person(String name, int age) {
+        this.name = name;
+        this.age = age;
+    }
+}</code></pre>
+
+    <h2 id="exceptions">Java Exceptions</h2>
+    <p>
+      Exceptions in Java are used to handle unexpected or exceptional
+      situations that occur during the execution of a program. They help in
+      handling errors and maintaining program flow.
+    </p>
+    <pre><code>try {
+    // code that may throw an exception
+} catch (Exception e) {
+    // code to handle the exception
+}</code></pre>
+
+    <p>
+      These Java documentation examples were adapted from the
+      <a href="https://docs.oracle.com/en/java/">official Java documentation</a>.
+    </p>
+  </main>
+
+  <footer>
+    <a href="./about.html">About Us</a> Copyright &copy; JetBrains, 2023
+  </footer>
+</body>
+
+</html>

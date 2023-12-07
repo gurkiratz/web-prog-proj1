@@ -1,73 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <style>
-      .nav-links {
-        display: flex;
-        gap: 10px;
-      }
 
-      footer {
-        position: absolute;
-        bottom: 12px;
-      }
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <style>
+    .nav-links {
+      display: flex;
+      gap: 10px;
+    }
 
-      .header-about {
-        max-width: 800px;
-      }
-    </style>
-    <title>Jet Brains</title>
-  </head>
-  <body>
-    <header>
-      <table>
-        <tr>
-          <td>
-            <h1>Jet Brains Technical Documentation</h1>
-          </td>
-          <td>
-            <input type="text" placeholder="Search our docs..." size="20" />
-            <button>Signup</button>
-            <button>Login</button>
-          </td>
-        </tr>
-        <tr>
-          <td class="header-about">
-            Our website aims to provide a vast collection of manuals and
-            learning materials for various programming languages, including
-            HTML, CSS, JavaScript, Python, and more.
-          </td>
-        </tr>
-      </table>
-    </header>
-    <nav>
-      <h3>Explore our excellent docs✨</h3>
-      <table>
-        <tr class="nav-links">
-          <td>
-            <a href="./html-doc.html">HTML</a>
-          </td>
-          <td>
-            <a href="./css-doc.html">CSS</a>
-          </td>
-          <td>
-            <a href="./js-doc.html">JavaScript</a>
-          </td>
-          <td>
-            <a href="./python-doc.html">Python</a>
-          </td>
-          <td>
-            <a href="./java-doc.html">Java</a>
-          </td>
-        </tr>
-      </table>
-      <ul></ul>
-    </nav>
-    <footer>
-      <a href="./about.html">About Us</a>
-      Copyright &copy; JetBrains, 2023
-    </footer>
-  </body>
+    footer {
+      position: absolute;
+      bottom: 12px;
+    }
+
+    .header-about {
+      max-width: 800px;
+    }
+  </style>
+  <title>JetBrains</title>
+</head>
+
+<body>
+  <header>
+    <table>
+      <tr>
+        <td>
+          <h1>JetBrains Technical Documentation</h1>
+        </td>
+        <td>
+          <input type="text" placeholder="Search our docs..." size="20" />
+          <button onclick="openLoginPage()">Signup</button>
+          <button onclick="openLoginPage()">Login</button>
+        </td>
+      </tr>
+      <tr>
+        <td class="header-about">
+          Our website aims to provide a vast collection of manuals and
+          learning materials for various programming languages, including
+          HTML, CSS, JavaScript, Python, and more.
+        </td>
+      </tr>
+    </table>
+  </header>
+  <nav>
+    <h3>Explore our excellent docs✨</h3>
+    <table>
+      <tr class="nav-links">
+        <td>
+          <a href="./html-doc.html">HTML</a>
+        </td>
+        <td>
+          <a href="./css-doc.html">CSS</a>
+        </td>
+        <td>
+          <a href="./js-doc.html">JavaScript</a>
+        </td>
+        <td>
+          <a href="./python-doc.html">Python</a>
+        </td>
+        <td>
+          <a href="./java-doc.html">Java</a>
+        </td>
+      </tr>
+    </table>
+    <ul></ul>
+  </nav>
+  <footer>
+    <a href="./about.html">About Us</a>
+    Copyright &copy; JetBrains, 2023
+  </footer>
+
+  <script>
+    function performSignup() {
+      alert('Signup button clicked!');
+    }
+
+    function performLogin() {
+      alert('Login button clicked!');
+    }
+
+    document.getElementById('signupButton').addEventListener('click', performSignup);
+    document.getElementById('loginButton').addEventListener('click', performLogin);
+
+    
+
+    function openLoginPage() {
+      window.location.href = './login.html';
+    }
+  </script>
+</body>
+
 </html>
