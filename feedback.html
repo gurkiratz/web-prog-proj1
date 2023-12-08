@@ -53,9 +53,10 @@
   <body>
     <div class="container">
       <h1>Feedback Form</h1>
-      <form action="submit_feedback.php" method="post">
+      <form id="feedbackForm">
         <label for="experience">How was your experience?</label>
-        <select id="experience" name="experience">
+        <select id="experience" name="experience" required>
+          <option value="" disabled selected>Select an option</option>
           <option value="excellent">Excellent</option>
           <option value="good">Good</option>
           <option value="average">Average</option>
@@ -70,11 +71,24 @@
           placeholder="Your feedback"
         ></textarea>
 
-        <button type="submit">Submit Feedback</button>
+        <button onclick="validateForm()" type="submit">Submit Feedback</button>
         <a href="./index.html" style="display: block; color: #0056b3"
           >Go to Home</a
         >
       </form>
     </div>
+
+    <script>
+      function validateForm() {
+        var experience = document.getElementById("experience").value
+        var comments = document.getElementById("comments").value
+
+        if (experience === "" || comments === "") {
+          alert("Please fill out all fields.")
+        } else {
+          alert("Form submitted successfully!")
+        }
+      }
+    </script>
   </body>
 </html>
