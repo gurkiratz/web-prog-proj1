@@ -4,8 +4,6 @@
       <meta charset="UTF-8" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <style>
-         *{
-         }
          .header-links {
          display: flex;
          gap: 10px;
@@ -60,11 +58,8 @@
          a:active {
          color: rgb(255, 255, 255);
          }
-         #button1{
-         color: black;
-         }
-         #button2{
-         color: black;
+         button {
+            color: black
          }
       </style>
       <title>Java-doc</title>
@@ -93,8 +88,8 @@
                </td>
                <td>
                   <input type="text" placeholder="Search our docs..." size="20" />
-                  <button id="button1">Signup</button>
-                  <button id="button2">Login</button>
+                  <button onclick="openLoginPage()">Signup</button>
+                  <button onclick="openLoginPage()">Login</button>
                </td>
             </tr>
             <tr class="nav-links"></tr>
@@ -199,5 +194,6 @@
       <footer>
          <a href="./about.html">About Us</a> Copyright &copy; JetBrains, 2023
       </footer>
+    <script src="./js/login.js"></script>
    </body>
 </html>
