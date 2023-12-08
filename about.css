@@ -126,3 +126,14 @@ footer a {
   color: var(--text-color);
   margin: 0 10px;
 }
+
+#nameError{
+  color: red;
+}
+
+#emailError{
+  color: red;
+}
+#messageError{
+  color: red;
+}
