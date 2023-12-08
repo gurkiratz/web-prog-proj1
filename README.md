@@ -12,4 +12,4 @@ Live website: https://steady-cascaron-49874f.netlify.app/
 
 - Steven: Used W3schools and researched about CSS and HTML in order to design and fill the HTML/CSS pages in the project.
 
-- Ishphrat: He is the person that made gave us the idea of this project.
+- Ishpreet: He is the person that made gave us the idea of this project.
