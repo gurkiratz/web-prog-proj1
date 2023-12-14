@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./dhyey.css">
+    <link rel="stylesheet" href="./dhyey.css" />
     <title>python-doc</title>
   </head>
   <body>
@@ -30,7 +30,13 @@
           </td>
 
           <td>
-            <input type="text" placeholder="Search our docs..." size="20" />
+            <input
+              id="search-input"
+              type="text"
+              placeholder="Search our docs..."
+              size="20"
+            />
+            <button id="search-btn">Search</button>
             <button onclick="openLoginPage()">Signup</button>
             <button onclick="openLoginPage()">Login</button>
           </td>
@@ -115,5 +121,6 @@
       <a href="./about.html">About Us</a> Copyright &copy; JetBrains, 2023
     </footer>
     <script src="./js/login.js"></script>
+    <script src="./js/search.js"></script>
   </body>
 </html>

@@ -5,13 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>JetBrains Technical Documentation</title>
     <link rel="stylesheet" href="./index.css" />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+      integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
   </head>
   <body>
     <header>
       <h1>JetBrains Technical Documentation</h1>
       <div class="search-bar">
-        <input type="text" placeholder="Search our docs..." size="20" />
-        <button>Search</button>
+        <input
+          id="search-input"
+          type="text"
+          placeholder="Search our docs..."
+          size="20"
+        />
+        <button id="search-btn">Search</button>
         <button onclick="openLoginPage()">Signup</button>
         <button onclick="openLoginPage()">Login</button>
       </div>
@@ -102,6 +113,6 @@
       Copyright &copy; JetBrains, 2023
     </footer>
     <script src="./js/login.js"></script>
-    <script src="./js/login.js"></script>
+    <script src="./js/search.js"></script>
   </body>
 </html>
